@@ -439,7 +439,7 @@ const Origyn = () => {
         {/* Header */}
         <div className="flex justify-between items-center mb-8">
           <div>
-            <p className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>{t("Welcome back")}</p>
+            <p className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm`}>{t("Welcome back")} dude</p>
             <h1 className="text-2xl font-light">{t("Today's Creation")}</h1>
           </div>
           <button 
