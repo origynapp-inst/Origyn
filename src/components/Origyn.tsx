@@ -460,7 +460,7 @@ const Origyn = () => {
           <div className="flex items-center justify-between mb-4">
             <div>
               <p className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} text-sm mb-1`}>{t("Streak")}</p>
-              <p className="text-3xl font-light">{streak} {t("days")}</p>
+              <p className="text-xl font-light">{streak} {t("days")}</p>
               {todayCompleted && (
                 <p className="text-sm text-green-500 mt-1">✓ {t("Today completed")}</p>
               )}
@@ -470,7 +470,7 @@ const Origyn = () => {
                 <div key={i} className="text-center">
                   <p className={`text-xs ${theme === 'dark' ? 'text-gray-500' : 'text-gray-400'} mb-1`}>{day.day[0]}</p>
                   <div
-                    className={`w-8 h-8 rounded-lg ${
+                    className={`w-7 h-7 rounded-lg ${
                       day.completed ? 'bg-gradient-to-br from-orange-500 to-red-500' : theme === 'dark' ? 'bg-white/10' : 'bg-black/10'
                     }`}
                   />
