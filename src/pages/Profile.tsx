@@ -36,7 +36,7 @@ interface ProfileProps {
   onStartCreationWithPrompt?: (prompt: string) => void;
 }
 
-export default function Profile({ onBack, user, achievements, savedPrompts, theme, onThemeChange, onDisciplineChange, onMoodChange, onLanguageChange, onRemoveSavedPrompt, onStartCreationWithPrompt }: ProfileProps) {
+export const ProfileScreen = ({ onBack, user, achievements, savedPrompts, theme, onThemeChange, onDisciplineChange, onMoodChange, onLanguageChange, onRemoveSavedPrompt, onStartCreationWithPrompt }: ProfileProps) => {
   const [showSettings, setShowSettings] = useState(false);
   const [settingsView, setSettingsView] = useState<'main' | 'theme' | 'discipline' | 'mood' | 'notifications' | 'language'>('main');
   const [notificationTime, setNotificationTime] = useState(user?.notificationTime || '09:00');
